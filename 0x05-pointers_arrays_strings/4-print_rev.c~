@@ -1,0 +1,18 @@
+@@ -8,11 +8,15 @@
+ */
+void print_rev(char *s)
+{
+	int len = 1;
+	int l = 1;
+
+	while (*(s++))
+		len++;
+	while (l <= len)
+	{
+		_putchar(*(s - l));
+		l++;
+	while (l--)
+		_putchar(*(--s));
+	}
+	_putchar('\n');
+}
